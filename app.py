@@ -10,7 +10,7 @@ def getApiResponse(url):
     my_headers = {auth: value}
     response = requests.get(url, headers=my_headers)
     return(response.json())
-@app.route("/agsi/providers")
+@app.route("/")
 def getAgsiProviders():    
     url="https://agsi.gie.eu/api/about?listing=true"
     
