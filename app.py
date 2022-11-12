@@ -3,7 +3,10 @@ import json
 from flask import Flask
 from flask import jsonify
 app = Flask("app")
-
+@app.route("/")
+def hello():
+    return (jsonify("Hello world"))
+'''
 def getApiResponse(url):
     auth="x-key"
     value="2056efd4b2a3c1b2a25ee38794c9b118"
@@ -58,5 +61,5 @@ def getAgsiFacilities():
                 d["gasDayStart"]=facilityData["gasDayStart"]
                 d["gasInStorage"]=facilityData["gasInStorage"]
                 Li.append(d)
-    return (jsonify(Li))
+    return (jsonify(Li))'''
 #git
