@@ -43,7 +43,6 @@ def getAgsiProviders():
         Li.append(d)
     st["body"]=Li
     return(jsonify(st))
-app.run(host='0.0.0.0', port=5000)
 
 
 @app.route("/agsi/facilities")
